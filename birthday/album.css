@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  font-size: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: url("bg_img.jpg") no-repeat center center;
+  /*加载背景图*/
+  /* 背景图不平铺 */
+  background-size: cover;
+  /* 让背景图基于容器大小伸缩 */
+  background-attachment: fixed;
+  /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+  /* 此条属性必须设置否则可能无效 */
+  background-color: white;
+  /* 设置背景颜色，背景图加载过程中会显示背景色 */
+
+  /* overflow: hidden; */
+}
+
+body {
+  background-color: #E7E7E7;
+  display: table;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.image {
+  width: 310px;
+  padding: 18px;
+  margin: 30px;
+  background-color: white;
+
+  transition: 0.8s;
+  -webkit-transform: transform 0.8s;
+}
+
+.image:hover {
+  transform: scale(1.5) rotate(0deg) !important;
+
+}
